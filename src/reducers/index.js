@@ -1,11 +1,9 @@
 import { combineReducers } from "redux";
 import photo from "./unsplashReducer";
 
-// import { connectRouter } from "connected-react-router";
 
-const rootReducer = history =>
+const rootReducer =
   combineReducers({
-    // router: connectRouter(history),
     photo
   });
 
