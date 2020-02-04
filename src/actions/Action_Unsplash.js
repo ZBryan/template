@@ -7,7 +7,7 @@ export const getPhoto =  () =>  dispatch => {
   // console.log(dispatch)
   // console.log("ran");
    unsplash.photos
-    .getRandomPhoto({ username: "naoufal" })
+    .getRandomPhoto({count:5})
     .then(toJson)
     .then(payload => {
       // console.log(`payload`,payload);

@@ -5,7 +5,7 @@ export default function(state = null, action) {
   // console.log(GET_PHOTO)
   switch (action.type) {
     case GET_PHOTO:
-      console.log(`ran reducer`, action.payload);
+      // console.log(`ran reducer`, action.payload);
       return  action.payload
     default:
       return state;
