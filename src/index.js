@@ -6,8 +6,6 @@ import rootReducer from "./reducers";
 import thunk from "redux-thunk";
 
 import App from "./components/App";
-import { getPhoto } from "./actions/Action_Unsplash";
-getPhoto()
 const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
 
 render(

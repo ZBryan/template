@@ -5,7 +5,7 @@ import photo from "./unsplashReducer";
 
 const rootReducer = history =>
   combineReducers({
-    router: connectRouter(history),
+    // router: connectRouter(history),
     photo
   });
 
