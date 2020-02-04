@@ -16,7 +16,7 @@ function App() {
   }, []);
 
   return (
-    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gridGap: '25px', textAlign: 'center' }}>
+    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gridGap: '25px', textAlign: 'center', margin: '20px' }}>
       {photos &&
         <PhotoTile photos={photos}></PhotoTile>}
     </div>

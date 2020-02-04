@@ -3,7 +3,14 @@ import React from 'react'
 export const PhotoTile = (props) => {
   let {photos} = props
   return photos.map(photo => (
-    <div style={{ border: "1px solid grey", padding: "15px" }} key={photo.id}>
+    <div
+      style={{
+        border: "1px solid grey",
+        padding: "15px",
+        boxShadow: "8px 5px 5px grey"
+      }}
+      key={photo.id}
+    >
       <a href={photo.urls.full}>
         <img src={photo.urls.thumb} alt="" />
       </a>

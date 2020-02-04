@@ -4,13 +4,10 @@ export const GET_PHOTO = "GET_PHOTO";
 const api = process.env.REACT_APP_UNSPLASH_API_KEY
 const unsplash = new Unsplash({ accessKey: api });
 export const getPhoto =  () =>  dispatch => {
-  // console.log(dispatch)
-  // console.log("ran");
    unsplash.photos
-    .getRandomPhoto({count:5})
+    .getRandomPhoto({count:6})
     .then(toJson)
     .then(payload => {
-      // console.log(`payload`,payload);
        return dispatch({ type: GET_PHOTO, payload });
     })
     .catch(err => {
