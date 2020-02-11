@@ -7,17 +7,19 @@ export const PhotoTile = (props) => {
       style={{
         border: "1px solid grey",
         padding: "15px",
-        boxShadow: "8px 5px 5px grey"
+        boxShadow: "8px 5px 5px grey",
+        borderRadius: '8px',
+        overflow: 'hidden'
       }}
       key={photo.id}
     >
       <a href={photo.urls.full}>
-        <img src={photo.urls.thumb} alt="" />
+        <img src={photo.urls.thumb} alt="" style={{maxHeight:'250px',}}/>
       </a>
       <p>
-        Name: {photo.user.first_name} {photo.user.last_name}
+        Artist: {photo.user.first_name} {photo.user.last_name}
       </p>
-      <p>{photo.location.name}</p>
+      <p>Photo location {photo.location.name}</p>
     </div>
   ));
 }
